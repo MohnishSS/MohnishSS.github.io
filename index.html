@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MohnishSS</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior:smooth;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: 'Futura', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 10%;
+            border-radius: 25px;
+            background: #d1d1d1;
+            box-shadow:  11px 11px 22px #b2b2b2, -11px -11px 22px #f0f0f0;            
+            width: 36%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 25px;
+            transition:all 0.3s;
+            
+        }
+        .container:hover {
+            box-shadow: 30px 30px 60px #b2b2b2, -30px -30px 60px #f0f0f0;
+            transform: scale(1.1); 
+        }
+
+
+        .timeline img {
+            display: block; 
+            width: 70%;
+            margin: 0 auto; 
+            margin-top: 1%;
+        }
+
+        .hidden-container {
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 25px;
+            background: #d1d1d1;
+            box-shadow:  11px 11px 22px #b2b2b2, -11px -11px 22px #f0f0f0;            
+            width:fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            padding: 25px;
+            transition:all 0.3s;
+            display:none;
+        }
+
+        .hidden-container:target {
+            display: block;
+        }
+
+        .top-text{
+            border-radius: 10px;
+            background: #323232;
+            color:#d1d1d1;
+            padding: 2px;
+            margin-top: 5%;
+            margin-left: 11%;
+            display: inline-block;
+            margin-right: auto;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .top-text:hover{
+            box-shadow:  0px 0px 22px #ff6f0f, 0px 0px 22px #f0f0f0;
+            transform: scale(1.05);
+            display:all;
+            
+        }
+
+        .top-text:active{
+            transform: scale(0.9);
+        }
+
+        .bot-text{
+            border-radius: 10px;
+            background: #323232;
+            color:#d1d1d1;
+            padding: 2px;
+            margin-top: 1%;
+            margin-left: 11%;
+            display: inline-block;
+            margin-right: auto;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        
+
+        .bot-text:hover{
+            box-shadow:  0px 0px 22px #ff6f0f, 0px 0px 22px #f0f0f0;
+            transform: scale(1.1);
+        }
+
+        .bot-text:active{
+            transform: scale(0.9);
+        }
+        
+        h1 {
+            font-size: xxx-large;
+        }
+
+        p, h2 {
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .p2{
+            font-size: x-large;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; 
+            font-size: inherit; 
+            font-family: inherit; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> <a href="#projects-section">
+        <h1 >About Me</h1>
+        <p>Mohnish Shridhar</p>
+    </a>
+    </div>
+    <div id="timeline-section">
+        <h2 style="margin-top: 10%;">My Life on a Timeline</h2>
+        <p class="p2">Click on any of the years for more information</p>
+    </div>
+    <div>
+        <p class="top-text" style="margin-left: 19%; "><a href="#hidden-container-1">2005</a></p>
+        <p class="top-text"><a href="#hidden-container-2">2018</a></p>
+        <p class="top-text"><a href="#hidden-container-3">2020</a></p>
+        <p class="top-text"><a href="#hidden-container-4">2022</a></p>
+    </div>
+    <div class="timeline">
+        <img src="timeline drawing.png" alt="Timeline" width="72%">
+    </div>
+    <div>
+        <p class="bot-text" style="margin-left: 28.5%;"><a href="#hidden-container-5">2012</a></p>
+        <p class="bot-text"><a href="#hidden-container-6">2019</a></p>
+        <p class="bot-text"><a href="#hidden-container-7">2021</a></p>
+        <p class="bot-text"><a href="#hidden-container-8">2023</a></p>
+    </div>
+    <div class="hidden-container" id="hidden-container-1">
+        <h2>2005: Birth</h2>
+        <p class="p2">I was born on the 25th of November in Mumbai, India.</p>
+    </div>
+    <div class="hidden-container" id="hidden-container-2">
+        <h2>2018</h2>
+        <p class="p2">This is when I had my first experience with computer science,</p>
+        <p class="p2">through robotics classes and coding courses.</p>
+        <p class="p2">I explored Arduino Nano and learnt programming languages</p>
+        <p class="p2">such as JavaScript, HTML, CSS and the basics of React</p>
+    </div>
+    <div class="hidden-container" id="hidden-container-3">
+        <h2>Hidden Container for 2020</h2>
+    </div>
+    <div class="hidden-container" id="hidden-container-4">
+        <h2>Hidden Container for 2022</h2>
+    </div>
+    <div class="hidden-container" id="hidden-container-5">
+        <h2>2012</h2>
+        <p class="p2">Nothing particularly interesting,</p>
+        <p class="p2">except around this time I took about 5 injuries to the head</p>
+        <p class="p2">which explains the marks on my forehead :)</p>
+        <p class="p2">(i ran around a lot)</p>
+    </div>
+    <div class="hidden-container" id="hidden-container-6">
+        <h2>Hidden Container for 2019</h2>
+    </div>
+    <div class="hidden-container" id="hidden-container-7">
+        <h2>Hidden Container for 2021</h2>
+    </div>
+    <div class="hidden-container" id="hidden-container-8">
+        <h2>Hidden Container for 2023</h2>
+    </div>
+    <div id="projects-section" style="text-align: center; margin-top: 20%;">
+        <h2 style="display: inline;">Projects</h2>
+        <p class="p2" style="display: inline; margin-top: 10%;">and stuff</p>
+    </div>
+</body>
+
+</html>

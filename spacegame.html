@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Game
+  </title>
+
+  <style>
+    body {
+      margin: 0; 
+      padding: 0; 
+      background-image: url("/Users/mohnishshridhar/downloads/tile_space_2.png");
+      background-size:auto;
+      background-attachment: fixed;
+    }
+
+    .container {
+      padding: 5px; 
+      color: white; 
+      text-align: center;
+      font-family:'GohuFont 14 Nerd Font';
+    }
+
+    .scratch-container {
+      width: 50%; /* Set the desired width */
+      height:600px;
+      position: relative;
+      
+      margin: 0 auto; /* Center the container horizontally */
+      align-items: center;
+    }
+
+    .scratch-iframe {
+      position:relative;
+      width: 100%;
+      height: 100%;
+      border: none; /* Remove iframe border */
+    }
+
+    .table-container {
+      display: table;
+      width: 100%;
+    }
+
+    .table-row {
+      display: table-row;
+    }
+
+    .vertical-text {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.2em;
+      color: white;
+      writing-mode: vertical-lr; /* Vertical text orientation */
+    }
+
+    .left-text {
+      display: table-cell;
+      width: 25%;
+      writing-mode: vertical-rl; /* Vertical text orientation - right to left */
+      transform: rotate(180deg);
+      font-size: xxx-large;
+    }
+
+    .right-text {
+      display: table-cell;
+      width: 25%;
+      writing-mode: vertical-lr; /* Vertical text orientation - left to right */
+      font-size: xxx-large;
+    }
+
+    .column-50 {
+      display: table-cell;
+      width: 50%;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="font-size:xxx-large;">
+      DOUBLE CLICK SPACEBAR TO START
+    </h1>
+    <p style="font-size: xx-large;">
+      ARROW KEYS 2 MOVE 
+    </p>
+    <div class="table-container">
+      <div class="table-row">
+        <div class="left-text vertical-text">
+          ARROW KEYS 2 MOVE
+        </div>
+
+        <div class="column-50 scratch-container">
+          <iframe class="scratch-iframe" src="https://scratch.mit.edu/projects/894593980/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+
+        <div class="right-text vertical-text">
+          ARROW KEYS 2 MOVE
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
