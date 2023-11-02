@@ -7,6 +7,7 @@
     <style>
         /* CSS Reset */
         * {
+            background-image: 'background download.jpg';
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -16,9 +17,10 @@
         /* Basic styling */
         body {
             font-family: 'Futura', sans-serif;
-            background-image: url(background\ download.jpg);
-            background-size:33%;
-            background-attachment: fixed;
+            background-image: url('4885247.jpg');
+            background-size:100%;
+            background-attachment:fixed;
+
         }
 
         .container {
@@ -37,13 +39,81 @@
         }
         .container:hover {
             box-shadow: 30px 30px 60px #3b85f5, -30px -30px 60px #f0f0f0;
-            transform: scale(1.1); 
-;            
+            transform: scale(1.1);             
         }
 
         .container:active{
             transform: scale(0.9);
         }
+
+        .quick-boxes {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10%;
+            margin-top: 5%;
+        }
+
+        .quick-box1 {
+            width:max-content;
+            max-width: 40%;
+            height: auto;
+            max-height: fit-content;
+            padding: 10px;
+            background: #323232;
+            color: #fdfdfd;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition:all 0.3s;
+        }
+
+        .quick-box2 {
+            width:max-content;
+            max-width: 40%;
+            height: auto;
+            max-height: fit-content;
+            padding: 10px;
+            background: #323232;
+            color: #fdfdfd;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition:all 0.3s;
+        }
+
+        .quick-box3 {
+            width:max-content;
+            max-width: 40%;
+            height: auto;
+            max-height: fit-content;
+            padding: 10px;
+            background: #323232;
+            color: #fdfdfd;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition:all 0.3s;
+        }
+
+        .quick-box1:hover, .quick-box2:hover, .quick-box3:hover {
+            box-shadow: 0px 0px 22px #ff6f0f, 0px 0px 22px #f0f0f0;
+
+        }
+
+
+        .quick-paragraph {
+            display: none;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        
+        .quick-box1:hover .quick-paragraph,
+        .quick-box2:hover .quick-paragraph,
+        .quick-box3:hover .quick-paragraph {
+            display: block;
+        }
+
 
         .timeline img {
             display: block; 
@@ -143,12 +213,32 @@
 </head>
 
 <body>
-    <div class="container"> <a href="#projects-section">
+    <div class="container"> <a href="#timeline">
         <h1 style="color: #f0f0f0;">About Me</h1>
         <p style="color: #f0f0f0;">Mohnish Shridhar</p>
     </a>
     </div>
-    <div id="timeline-section">
+    <div id="quick-info">
+        <h2 style="margin-top: 12%;">Quick Overview</h2>
+    </div>
+    <div class="quick-buttons">
+    <div class="quick-boxes">
+        <div class="quick-box1">
+            <p class="quick-title">Personality</p>
+            <p class="quick-paragraph">Hey! I'm Mohnish. I am an extremely extroverted person. I love socializing and making friends, and I think I'm slightly funny.</p>
+
+        </div>
+        <div class="quick-box2">
+            <p class="quick-title">Education</p>
+            <p class="quick-paragraph">This is the paragraph for the second box.</p>
+        </div>
+        <div class="quick-box3">
+            <p class="quick-title">Languages</p>
+            <p class="quick-paragraph">This is the paragraph for the third box.</p>
+            </div>
+        </div>
+    </div>
+    <div id="timeline">
         <h2 style="margin-top: 10%;">My Life on a Timeline</h2>
         <p class="p2">Click on any of the years for more information</p>
     </div>
@@ -171,18 +261,30 @@
         <h2>2005: Birth</h2>
         <p class="p2">I was born on the 25th of November in Mumbai, India.</p>
     </div>
-    <div class="hidden-container" id="hidden-container-2">
+    <div class="hidden-container" id="hidden-container-2" style="width: 55%;">
         <h2>2018</h2>
         <p class="p2">This is when I had my first experience with computer science,</p>
         <p class="p2">through robotics classes and coding courses.</p>
         <p class="p2">I explored Arduino Nano and learnt programming languages</p>
-        <p class="p2">such as JavaScript, HTML and CSS</p>
+        <p class="p2">such as JavaScript, HTML and CSS.</p>
+        <p class="p2">Also, unrelated but I got a dog in November 2017! This is Ellie now.</p>
+        <p class="p2"><img src="ellie portrait gp7.jpg" width="40%"></p>
     </div>
     <div class="hidden-container" id="hidden-container-3">
         <h2>2020: High School Year 2</h2>
+        <p class="p2">The pandemic along with the accident that broke my leg</p>
+        <p class="p2">meant that 2020 was clearly not a good year for me.</p>
+        <p class="p2">Yet, I continued learning online, I was introduced to React.js</p>
+        <p class="p2">and dipped my toes in using Python for data analytics.</p>
     </div>
     <div class="hidden-container" id="hidden-container-4">
         <h2>2022: High School Year 4</h2>
+        <p class="p2">Thanks to my previous exposure to programming, I was doing really well in school.</p>
+        <p class="p2">Around this time, I got proficient in Java and still use it as my primary language.</p>
+        <p class="p2">Also, I discovered my love for math and participated in various competitions.</p>
+        <p class="p2">My CS knowledge allowed me to volunteer for the tech committee at Save The K9s in school.</p>
+        <p class="p2">I continued playing volleyball simultaneously and improved my skills tremendously.</p>
+        <p class="p2">Fun Fact: I went to Tanzania and did a PADI course to become a certified Scuba Diver</p>
     </div>
     <div class="hidden-container" id="hidden-container-5">
         <h2>2012</h2>
@@ -194,13 +296,28 @@
     <div class="hidden-container" id="hidden-container-6">
         <h2>2019: High School Year 1</h2>
         <p class="p2">By this time, I had discovered my love for CS</p>
-        <p class="p2">and </p>
+        <p class="p2">and broadened my skills and knowledge in the subject</p>
+        <p class="p2">by making small projects here and there.</p>
+        <p class="p2">This was also when I went skydiving and scuba diving</p>
+        <p class="p2">for the first time in Australia!</p>
+        
     </div>
     <div class="hidden-container" id="hidden-container-7">
         <h2>2021: High School Year 3</h2>
+        <p class="p2">I changed schools after 10th grade to pursue IBDP and picked CS as a Higher Level subject.</p>
+        <p class="p2">Apart from that, I also put myself out there joined clubs such as</p>
+        <p class="p2">the CGI club where I learned about Blender 3D modeling.</p>
+        <p class="p2">I also took an online Graphic Design course and volunteered at Let It Beat! in school</p>
+        <p class="p2">I even joined the Volleyball team and played twice a week.</p>
     </div>
     <div class="hidden-container" id="hidden-container-8">
         <h2>2023: University Year 1</h2>
+        <p class="p2">This is/was probably the most important year of my life.</p>
+        <p class="p2">I gave the IB exams and got into Boston University!</p>
+        <p class="p2">I had never been to the USA before and was obviously anxious about it all,</p>
+        <p class="p2">but thankfully I settled in with ease and adapted to the new environment</p>
+        <p class="p2">by making friends and getting involved on campus, through Hackathons and clubs.</p>
+        <p class="p2">I decided to make this website for fun in the first semester of college.</p>
     </div>
     <div id="projects-section" style="text-align: center; margin-top: 20%;">
         <h2 style="display: inline;">Projects</h2>
