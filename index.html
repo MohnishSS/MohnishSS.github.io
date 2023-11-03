@@ -34,7 +34,6 @@
             margin-right: auto;
             padding: 25px;
             transition:all 0.3s;
-
             
         }
         .container:hover {
@@ -48,13 +47,15 @@
 
         .quick-boxes {
             display: flex;
-            justify-content: space-between;
             padding: 0 10%;
+            justify-content:space-between;
             margin-top: 5%;
+            align-items: center;
+            
         }
 
         .quick-box1 {
-            width:max-content;
+            width:fit-content;
             max-width: 40%;
             height: auto;
             max-height: fit-content;
@@ -68,7 +69,7 @@
         }
 
         .quick-box2 {
-            width:max-content;
+            width:fit-content;
             max-width: 40%;
             height: auto;
             max-height: fit-content;
@@ -82,7 +83,7 @@
         }
 
         .quick-box3 {
-            width:max-content;
+            width:fit-content;
             max-width: 40%;
             height: auto;
             max-height: fit-content;
@@ -96,7 +97,7 @@
         }
 
         .quick-box1:hover, .quick-box2:hover, .quick-box3:hover {
-            box-shadow: 0px 0px 22px #ff6f0f, 0px 0px 22px #f0f0f0;
+            box-shadow: 0px 0px 35px #00cc00, 0px 0px 35px #f0f0f0;
 
         }
 
@@ -180,6 +181,54 @@
 
         
 
+        .social-bar {
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 25px;
+            background: #323232;
+            box-shadow:  11px 11px 22px #323232, -11px -11px 22px #ffffff;            
+            width:fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            padding: 25px;
+            transition:all 0.3s;
+            display:flex;
+        }
+
+        .social-bar-img a {
+            text-align: center;
+            display: inline-block;
+            margin: auto 30px;
+            text-decoration: none;
+            color: #fdfdfd;
+            font-size: xx-large;
+            transition: all 0.2s;
+            border-radius: 25px;
+            padding: 5px;
+        }
+
+        .social-bar-img a:hover{
+            transform: scale(1.2);
+            box-shadow: 0px 0px 22px #e35fff, 0px 0px 22px #ffffff;
+        }
+        .social-bar-img a:active{
+            transform: scale(0.9);
+        }
+
+        .social-bar-img {
+            width: 64px;
+            height: 64px;
+            display: inline-flex;
+            cursor: pointer;
+            margin: 0 30px;
+            justify-content: center;
+            
+        }
+
+        
+
+
         .bot-text:hover{
             box-shadow:  0px 0px 22px #ff6f0f, 0px 0px 22px #f0f0f0;
             transform: scale(1.1);
@@ -188,7 +237,10 @@
         .bot-text:active{
             transform: scale(0.9);
         }
+
         
+        
+
         h1 {
             font-size: xxx-large;
         }
@@ -218,50 +270,48 @@
         <p style="color: #f0f0f0;">Mohnish Shridhar</p>
     </a>
     </div>
-    <div id="quick-info">
-        <h2 style="margin-top: 12%;">Quick Overview</h2>
+    <div id="quick-info" >
+        <h2 style="margin-top: 10%;">Quick Overview</h2>
     </div>
-    <div class="quick-buttons">
-    <div class="quick-boxes">
-        <div class="quick-box1">
+    <div class="quick-boxes" >
+        <div class="quick-box1" >
             <p class="quick-title">Personality</p>
-            <p class="quick-paragraph">Hey! I'm Mohnish. I am an extremely extroverted person. I love socializing and making friends, and I think I'm slightly funny.</p>
-
+            <p class="quick-paragraph">Hey! I'm Mohnish. I am an extremely extroverted person. I love socializing and making friends, and I think I'm slightly funny. I also love math!</p>
         </div>
         <div class="quick-box2">
             <p class="quick-title">Education</p>
-            <p class="quick-paragraph">This is the paragraph for the second box.</p>
+            <p class="quick-paragraph">I have been exploring Computer Science for almost 5 years now. I started out with a 3-year-long robotics course and a 144-class coding course where I learned about game and web development. For high school, I gave the IBDP and picked CompSci, Math AA and Physics as my HL subjects. I am currently pursuing a CompSci major at Boston University.</p>
         </div>
         <div class="quick-box3">
             <p class="quick-title">Languages</p>
-            <p class="quick-paragraph">This is the paragraph for the third box.</p>
+            <p class="quick-paragraph">I started out by learning JavaScript in 8th grade, and then was introduced to data science through Python. In 10th grade, I learnt HTML and CSS in school, and then Java in 11th and 12th. In college, I learnt lower level languages such as Assembly and C. I am currently most fluent in Java, HTML and CSS.</p>
             </div>
         </div>
     </div>
     <div id="timeline">
-        <h2 style="margin-top: 10%;">My Life on a Timeline</h2>
+        <h2 style="margin-top: 15%;">My Life on a Timeline</h2>
         <p class="p2">Click on any of the years for more information</p>
     </div>
     <div>
-        <p class="top-text" style="margin-left: 19%; "><a href="#hidden-container-1">2005</a></p>
-        <p class="top-text"><a href="#hidden-container-2">2018</a></p>
-        <p class="top-text"><a href="#hidden-container-3">2020</a></p>
-        <p class="top-text"><a href="#hidden-container-4">2022</a></p>
+        <p class="top-text" style="margin-left: 19%; "><a href="#2005-info">2005</a></p>
+        <p class="top-text"><a href="#2018-info">2018</a></p>
+        <p class="top-text"><a href="#2020-info">2020</a></p>
+        <p class="top-text"><a href="2022-info">2022</a></p>
     </div>
     <div class="timeline">
         <img src="timeline drawing.png" alt="Timeline" width="72%">
     </div>
     <div>
-        <p class="bot-text" style="margin-left: 28.5%;"><a href="#hidden-container-5">2012</a></p>
-        <p class="bot-text"><a href="#hidden-container-6">2019</a></p>
-        <p class="bot-text"><a href="#hidden-container-7">2021</a></p>
-        <p class="bot-text"><a href="#hidden-container-8">2023</a></p>
+        <p class="bot-text" style="margin-left: 28.5%;"><a href="#2012-info">2012</a></p>
+        <p class="bot-text"><a href="#2019-info">2019</a></p>
+        <p class="bot-text"><a href="#2021-info">2021</a></p>
+        <p class="bot-text"><a href="#2023-info">2023</a></p>
     </div>
-    <div class="hidden-container" id="hidden-container-1">
+    <div class="hidden-container" id="2005-info">
         <h2>2005: Birth</h2>
         <p class="p2">I was born on the 25th of November in Mumbai, India.</p>
     </div>
-    <div class="hidden-container" id="hidden-container-2" style="width: 55%;">
+    <div class="hidden-container" id="2018-info" style="width: 55%;">
         <h2>2018</h2>
         <p class="p2">This is when I had my first experience with computer science,</p>
         <p class="p2">through robotics classes and coding courses.</p>
@@ -270,14 +320,14 @@
         <p class="p2">Also, unrelated but I got a dog in November 2017! This is Ellie now.</p>
         <p class="p2"><img src="ellie portrait gp7.jpg" width="40%"></p>
     </div>
-    <div class="hidden-container" id="hidden-container-3">
+    <div class="hidden-container" id="2020-info">
         <h2>2020: High School Year 2</h2>
         <p class="p2">The pandemic along with the accident that broke my leg</p>
         <p class="p2">meant that 2020 was clearly not a good year for me.</p>
         <p class="p2">Yet, I continued learning online, I was introduced to React.js</p>
         <p class="p2">and dipped my toes in using Python for data analytics.</p>
     </div>
-    <div class="hidden-container" id="hidden-container-4">
+    <div class="hidden-container" id="2022-info" style="margin-right: 28%;">
         <h2>2022: High School Year 4</h2>
         <p class="p2">Thanks to my previous exposure to programming, I was doing really well in school.</p>
         <p class="p2">Around this time, I got proficient in Java and still use it as my primary language.</p>
@@ -286,14 +336,14 @@
         <p class="p2">I continued playing volleyball simultaneously and improved my skills tremendously.</p>
         <p class="p2">Fun Fact: I went to Tanzania and did a PADI course to become a certified Scuba Diver</p>
     </div>
-    <div class="hidden-container" id="hidden-container-5">
+    <div class="hidden-container" id="2012-info">
         <h2>2012</h2>
         <p class="p2">Nothing particularly interesting,</p>
         <p class="p2">except around this time I took about 5 injuries to the head</p>
         <p class="p2">which explains the marks on my forehead :)</p>
         <p class="p2">(i ran around a lot)</p>
     </div>
-    <div class="hidden-container" id="hidden-container-6">
+    <div class="hidden-container" id="2019-info">
         <h2>2019: High School Year 1</h2>
         <p class="p2">By this time, I had discovered my love for CS</p>
         <p class="p2">and broadened my skills and knowledge in the subject</p>
@@ -302,7 +352,7 @@
         <p class="p2">for the first time in Australia!</p>
         
     </div>
-    <div class="hidden-container" id="hidden-container-7">
+    <div class="hidden-container" id="2021-info">
         <h2>2021: High School Year 3</h2>
         <p class="p2">I changed schools after 10th grade to pursue IBDP and picked CS as a Higher Level subject.</p>
         <p class="p2">Apart from that, I also put myself out there joined clubs such as</p>
@@ -310,7 +360,7 @@
         <p class="p2">I also took an online Graphic Design course and volunteered at Let It Beat! in school</p>
         <p class="p2">I even joined the Volleyball team and played twice a week.</p>
     </div>
-    <div class="hidden-container" id="hidden-container-8">
+    <div class="hidden-container" id="2023-info">
         <h2>2023: University Year 1</h2>
         <p class="p2">This is/was probably the most important year of my life.</p>
         <p class="p2">I gave the IB exams and got into Boston University!</p>
@@ -319,9 +369,28 @@
         <p class="p2">by making friends and getting involved on campus, through Hackathons and clubs.</p>
         <p class="p2">I decided to make this website for fun in the first semester of college.</p>
     </div>
-    <div id="projects-section" style="text-align: center; margin-top: 20%;">
+    <!--<div id="projects-section" style="text-align: center; margin-top: 20%;">
         <h2 style="display: inline;">Projects</h2>
         <p class="p2" style="display: inline; margin-top: 10%;">and stuff</p>
+    </div>-->
+
+    <div class="quick-info"><h2 style="margin-top: 30%;">Contact Me</h2></div>
+    <div class="social-bar">
+        <div class="social-bar-img">
+            <a href="mailto:mohnish@bu.edu?subject=yo whats good"><p class="p2">Email</p></a>
+        </div>
+        <div class="social-bar-img">
+            <a href="https://www.github.com/MohnishSS" target="_blank"><img src="icons8-github-64.png" alt="GitHub"></a>
+        </div>
+        <div class="social-bar-img">
+            <a href="https://www.instagram.com/mxhnish" target="_blank"><img src="icons8-instagram-64.png" alt="Instagram"></a>
+        </div>
+        <div class="social-bar-img">
+            <a href="https://www.linkedin.com/in/mohnish-shridhar" target="_blank"><img src="icons8-linkedin-64.png" alt="LinkedIn"></a>
+        </div>
+        <div class="social-bar-img">
+            <a href="https://drive.google.com/file/d/1XIH5d5esSIsEyulMbZnXHshaakt_lVGT/view?usp=sharing" target="_blank"><p class="p2">Resume</p></a>
+        </div>
     </div>
 </body>
 
