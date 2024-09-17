@@ -44,6 +44,18 @@
         .container:active{
             transform: scale(0.9);
         }
+        .container2 {
+            text-align: center;
+            margin-top: 10%;
+            border-radius: 25px;
+            background: #f0f0f0;
+            box-shadow:  18px 18px 26px #707070, 0px 0px 0px #ffffff;            
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 25px;
+            transition:all 0.3s;
+        }
 
         .quick-boxes {
             display: flex;
@@ -265,13 +277,13 @@
 </head>
 
 <body>
-    <div class="container"> <a href="#timeline">
+    <div class="container"> <a href="#resume">
         <h1 style="color: #f0f0f0;">About Me</h1>
         <p style="color: #f0f0f0;">Mohnish Shridhar</p>
     </a>
     </div>
-    <div id="quick-info" >
-        <h2 style="margin-top: 10%;">Hey, Im Mohnish! I study (and teach) Computer Science at Boston University!</h2>
+    <div class="container2" >
+        <p style="color: #323232;" >Hey! I study (and teach) Computer Science at Boston University!</p>
     </div>
     <div id="quick-info" >
         <h2 style="margin-top: 10%;">Quick Overview</h2>
@@ -379,11 +391,16 @@
         <p class="p2" style="display: inline; margin-top: 10%;">and stuff</p>
     </div>-->
 
+    <div id="Resume" >
+        <div class="social-bar" >
+               <div class="social-bar-img">
+            <a href="https://drive.google.com/file/d/1mjzj1sAk6XWQcao1p4h3GsZnnMfe1yXo/view?usp=sharing" target="_blank"><p class="p2">Resume</p></a>
+        </div>
+        </div>
+    </div>
     <a href="spacegame.html"><h2 class="quick-info" style="margin-top: 25%;">Contact Me</h2></a>
     <div class="social-bar">
-        <div class="social-bar-img">
-            <a href="mailto:mohnish@bu.edu?subject=yo whats good"><p class="p2">Email</p></a>
-        </div>
+       
         <div class="social-bar-img">
             <a href="https://www.github.com/MohnishSS" target="_blank"><img src="icons8-github-64.png" alt="GitHub"></a>
         </div>
@@ -393,9 +410,7 @@
         <div class="social-bar-img">
             <a href="https://www.linkedin.com/in/mohnish-shridhar-b3bb92312/" target="_blank"><img src="icons8-linkedin-64.png" alt="LinkedIn"></a>
         </div>
-        <div class="social-bar-img">
-            <a href="https://drive.google.com/file/d/1mjzj1sAk6XWQcao1p4h3GsZnnMfe1yXo/view?usp=sharing" target="_blank"><p class="p2">Resume</p></a>
-        </div>
+     
     </div>
 </body>
 
